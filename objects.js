@@ -9,6 +9,7 @@ console.log(updatePlaylist(playlist, "KoRn", "Alone I Break"));
 
 var removeFromPlaylist = function(playlist, artistName) {
   delete playlist[artistName];
+  return playlist;
 }
 
 console.log(removeFromPlaylist(playlist, "Slipknot"));
