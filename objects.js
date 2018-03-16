@@ -7,6 +7,6 @@ var updatePlaylist = function(playlist, artistName, songTitle){
 
 console.log(updatePlaylist(playlist, "KoRn", "Alone I Break"));
 
-var removeFromPlaylist = function() {
-  
+var removeFromPlaylist = function(playlist, artistName) {
+  delete playlist[artistName];
 }
